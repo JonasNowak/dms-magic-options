@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="iconAlu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c6cdd8"/>
+      <stop offset="100%" stop-color="#8b93a0"/>
+    </linearGradient>
+    <linearGradient id="iconShell" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#edf1f7"/>
+      <stop offset="100%" stop-color="#d2d9e4"/>
+    </linearGradient>
+    <linearGradient id="iconGlint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer dark halo + brushed aluminum bezel so the capsule pops cleanly in 22-26px bar pills -->
+  <rect x="16.5" y="4.5" width="31" height="55" rx="15" ry="15"
+        fill="url(#iconAlu)" stroke="#1d2129" stroke-opacity="0.72" stroke-width="1.8"/>
+  <!-- Seamless white Magic Mouse multi-touch shell -->
+  <rect x="19" y="7" width="26" height="50" rx="12.5" ry="12.5"
+        fill="url(#iconShell)" stroke="#6c7482" stroke-opacity="0.4" stroke-width="0.9"/>
+  <!-- Diagonal glass reflection + subtle multi-touch gesture sheen -->
+  <path d="M31.5 8 C24.5 8.2 20 13 20 20 L20 35 C25 27.5 33 23.5 44 21.5 L44 20 C44 13 39.5 8 31.5 8 Z"
+        fill="url(#iconGlint)"/>
+  <path d="M26 16 Q32 13 38 16" fill="none" stroke="#8a94a6" stroke-opacity="0.35" stroke-width="1.4" stroke-linecap="round"/>
+</svg>

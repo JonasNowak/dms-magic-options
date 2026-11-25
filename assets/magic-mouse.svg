@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Soft contact shadow underneath the aluminum base -->
+    <radialGradient id="baseShadow" cx="50%" cy="52%" r="50%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.34"/>
+      <stop offset="85%" stop-color="#000000" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Brushed anodized aluminum base rim visible around the perimeter -->
+    <linearGradient id="aluRim" x1="10%" y1="5%" x2="90%" y2="95%">
+      <stop offset="0%" stop-color="#eef1f5"/>
+      <stop offset="22%" stop-color="#b8bec7"/>
+      <stop offset="50%" stop-color="#dce0e6"/>
+      <stop offset="78%" stop-color="#9aa1ab"/>
+      <stop offset="100%" stop-color="#c9cfd8"/>
+    </linearGradient>
+
+    <!-- Seamless glossy white acrylic multi-touch top shell -->
+    <linearGradient id="shellBody" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#f7f9fc"/>
+      <stop offset="75%" stop-color="#eaeff5"/>
+      <stop offset="100%" stop-color="#dde3ec"/>
+    </linearGradient>
+
+    <!-- Sculpted edge shading giving the low-profile dome curvature -->
+    <radialGradient id="shellDome" cx="46%" cy="32%" r="62%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="65%" stop-color="#ffffff" stop-opacity="0.0"/>
+      <stop offset="92%" stop-color="#7c8594" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#606978" stop-opacity="0.30"/>
+    </radialGradient>
+
+    <!-- Subtle diagonal studio glass reflection across upper touch surface -->
+    <linearGradient id="glassSheen" x1="0%" y1="0%" x2="100%" y2="85%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.78"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Subtle top bevel highlight -->
+    <linearGradient id="edgeBevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#8b95a3" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soft shadow beneath mouse -->
+  <ellipse cx="60" cy="63" rx="34" ry="54" fill="url(#baseShadow)"/>
+
+  <!-- Aluminum lower housing rim -->
+  <rect x="33" y="8" width="54" height="104" rx="26" ry="26"
+        fill="url(#aluRim)" stroke="#5b626d" stroke-opacity="0.55" stroke-width="1"/>
+
+  <!-- Inner chamfer shadow between aluminum base and white top shell -->
+  <rect x="35" y="10" width="50" height="100" rx="24.5" ry="24.5"
+        fill="#7c838f" fill-opacity="0.35"/>
+
+  <!-- Glossy seamless white multi-touch top surface -->
+  <rect x="35.8" y="10.8" width="48.4" height="98.4" rx="23.8" ry="23.8"
+        fill="url(#shellBody)"/>
+
+  <!-- Dome curvature shading -->
+  <rect x="35.8" y="10.8" width="48.4" height="98.4" rx="23.8" ry="23.8"
+        fill="url(#shellDome)"/>
+
+  <!-- Glossy studio reflection on the upper-left multi-touch glass -->
+  <path d="M58 12.2 C45.5 12.6 37.5 21.5 37.5 34.5 L37.5 64 C44.5 52 58 43 79.5 39 L79.5 34.5 C79.5 21 71 12.2 58 12.2 Z"
+        fill="url(#glassSheen)"/>
+
+  <!-- Crisp inner specular rim -->
+  <rect x="36.5" y="11.5" width="47" height="97" rx="23" ry="23"
+        fill="none" stroke="url(#edgeBevel)" stroke-width="1"/>
+</svg>

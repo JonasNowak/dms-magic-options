@@ -1,0 +1,21 @@
+{
+  "$schema": "https://github.com/duxlabs-dev/dux-shell/raw/refs/heads/master/quickshell/PLUGINS/plugin-schema.json",
+  "id": "magicOptions",
+  "name": "Magic Mouse Options",
+  "description": "Configure an Apple Magic Mouse 1 from the bar: two-finger right click, three-finger workspace swipe, four-finger overview, with a battery ring around the mouse icon.",
+  "version": "1.0.0",
+  "author": "mueslon",
+  "license": "MIT",
+  "type": "composite",
+  "capabilities": ["dankbar-widget", "daemon"],
+  "components": {
+    "daemon": "./MagicOptionsDaemon.qml",
+    "widget": "./MagicOptionsWidget.qml"
+  },
+  "settings": "./MagicOptionsSettings.qml",
+  "startupCheck": "./StartupCheck.qml",
+  "icon": "mouse",
+  "requires_dms": ">=2.0.0",
+  "dependencies": ["python3"],
+  "permissions": ["settings_read", "settings_write", "process"]
+}
